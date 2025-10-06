@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperaturas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Conversor de Temperaturas</h2>
+
+        <label>Temperatura:</label>
+        <input type="number" id="valor" value="0">
+
+        <label>De:</label>
+        <select id="de">
+            <option value="C">Celsius (°C)</option>
+            <option value="F">Fahrenheit (°F)</option>
+            <option value="K">Kelvin (K)</option>
+        </select>
+
+        <label>Para:</label>
+        <select id="para">
+            <option value="K">Kelvin (K)</option>
+            <option value="C">Celsius (°C)</option>
+            <option value="F">Fahrenheit (°F)</option>
+        </select>
+
+        <button onclick="converter()">Calcular</button>
+
+        <div id="resultado"></div>
+
+        <footer>Autor: Thiago</footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
