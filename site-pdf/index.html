@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Missão CSS</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+    <canvas id="bg"></canvas>
+
+    <section class="slide" id="slide1">
+        <h1>MISSÃO CSS</h1>
+        <p>By Matheus Henrique, Thiago, Miguel e Rian</p>
+    </section>
+
+    <section class="slide" id="slide2">
+        <h1>Sumário</h1>
+        <ul>
+            <li>O "Que" é CSS?</li>
+            <li>O "Chefe" da Web e as 3 Formas de Usar</li>
+            <li>A "Receita" do CSS</li>
+            <li>A "Mira" (Seletores Principais)</li>
+        </ul>
+    </section>
+
+    <section class="slide" id="slide3">
+        <h1>O que é CSS?</h1>
+        <p>CSS é uma linguagem de estilo usada para definir a aparência de páginas web.</p>
+    </section>
+
+    <section class="slide" id="slide4">
+        <h1>Significado da Sigla</h1>
+        <p>CSS significa Cascading Style Sheets, ou Folhas de Estilo em Cascata.</p>
+
+        <img src="https://hermes.dio.me/articles/cover/88153d7f-6a9c-4b57-8e92-123a69ba1beb.png" class="image">
+    </section>
+
+    <section class="slide" id="slide5">
+        <h1>Formas de Usar CSS</h1>
+        <p>CSS pode ser aplicado de forma inline, interna ou externa.</p>
+
+        <ul>
+            <li>Interno
+
+            </li>
+            <li>
+                Externo
+            </li>
+            <li>
+                Inline
+            </li>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVvY4tUyumQ5oE9SRXgTBY2I2r-q0o4VOSFg&s"
+                class="image3">
+        </ul>
+
+
+
+        <img src="" alt="">
+
+    </section>
+
+    <section class="slide" id="slide6">
+        <h1>FUNÇÃO / ANALOGIA</h1>
+        <h3>Função</h3>
+        <p>A principal função do CSS é definir o visual e o estilo das páginas da web — cores, fontes, tamanhos,
+            espaçamentos, posições, bordas, animações, etc.</p>
+        <h3>Analogia</h3>
+        <p>HTML é o esqueleto. CSS é a roupa, cabelo e acessórios que dão estilo à estrutura.</p>
+
+        <img src="https://assets.dio.me/unYF0HCqrhtnQ-UTUfwJpYFtt598Tn0xciQwOUbDoII/f:webp/q:80/L2FydGljbGVzL2NvdmVyLzkyN2EyN2RkLTJjYzctNGYzOC1hYjg2LWVlNmFkMTYwMWNjZS5wbmc"
+            alt="" class="image4">
+    </section>
+
+    <section class="slide" id="slide7">
+        <h1>Por que separar CSS do HTML?</h1>
+        <p>Organização, reutilização, manutenção e desempenho. Separar o CSS do HTML torna o código mais limpo, rápido e
+            fácil de gerenciar.</p>
+
+        <img src="https://www.brasilcode.com.br/wp-content/uploads/2020/05/HTML-e-CSS-Guia-basico.png" alt=""
+            class="image1">
+    </section>
+
+    <section class="slide" id="slide8">
+        <h1>O "Chefe" da Web e as 3 Formas de Usar</h1>
+        <p>CSS pode ser usado inline, interno ou externo. Cada forma tem seu uso ideal.</p>
+    </section>
+
+    <section class="slide" id="slide9">
+        <h1>Quem é o W3C?</h1>
+        <p>O W3C (World Wide Web Consortium) define padrões para garantir que os sites funcionem bem, sejam seguros e
+            acessíveis em todos os navegadores.</p>
+
+        <img src="https://bcbrito.com.br/wp-content/uploads/2023/03/w3c-web-standards-what-are-web-standards-jpg.webp"
+            class="image2">
+    </section>
+
+    <section class="slide" id="slide10">
+        <h1>Por que um programador deve se preocupar em "validar" o código?</h1>
+        <ul>
+            <li>"Validar" significa verificar se o site segue os padrões do W3C.</li>
+            <li>Evita erros de exibição entre navegadores.</li>
+            <li>Melhora o SEO (posicionamento no Google).</li>
+            <li>Garante acessibilidade e compatibilidade em todos os dispositivos.</li>
+        </ul>
+    </section>
+
+    <section class="slide" id="slide11">
+        <h1>EXEMPLOS DE CSS NO HTML</h1>
+        <h3>As 3 formas de aplicar CSS</h3>
+
+        <p><strong>1. Inline</strong></p>
+        <pre><code>&lt;p style="color:blue;"&gt;Texto azul&lt;/p&gt;</code></pre>
+
+        <p><strong>2. Interno</strong></p>
+        <pre><code>&lt;style&gt;
+  p { color: red; }
+&lt;/style&gt;</code></pre>
+
+        <p><strong>3. Externo</strong></p>
+        <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+
+        <h3>Qual é a mais usada?</h3>
+        <p>A forma <strong>externa</strong> é a mais comum no mercado por permitir reutilização, organização e
+            manutenção eficiente do código.</p>
+    </section>
+
+    <section class="slide" id="slide12">
+        <h1>A "RECEITA" DO CSS</h1>
+    </section>
+
+    <section class="slide" id="slide13">
+        <h1>Anatomia de uma Regra CSS</h1>
+
+        <pre><code>h1 {
+  color: blue;
+  font-size: 24px;
+}</code></pre>
+
+        <ul>
+            <li><strong>Seletor:</strong> <code>h1</code> — indica quais elementos serão estilizados.</li>
+            <li><strong>Chaves:</strong> <code>{ }</code> — delimitam o bloco de declarações.</li>
+            <li><strong>Propriedade:</strong> <code>color</code> — característica que será alterada.</li>
+            <li><strong>Valor:</strong> <code>blue</code> — valor atribuído à propriedade.</li>
+            <li><strong>Declaração:</strong> <code>color: blue;</code> — propriedade + valor + ponto e vírgula.</li>
+        </ul>
+    </section>
+
+    <section class="slide" id="slide15">
+        <h1>A "MIRA" DO CSS (Seletores Principais)</h1>
+
+    </section>
+    <section class="slide" id="slide16">
+        <h1>Seletor De Tag</h1>
+        <p>Seleciona elementos pelo nome da tag HTML
+            Aplica o estilo a TODOS os elementos com essa tag
+            Sintaxe: nome-da-tag { ... }
+        </p>
+    </section>
+
+    <section class="slide" id="slide17">
+        <h1>Seletor de Classe</h1>
+        <p>
+            Seleciona elementos que possuem um atributo class específico
+            Símbolo: Ponto (.)
+            Pode ser aplicado a múltiplos elementos
+            Sintaxe: .nome-da-classe { ... }
+        </p>
+    </section>
+
+    <section class="slide" id="slide18">
+        <h1>Seletor de ID</h1>
+        <p>
+            Seleciona um elemento específico pelo seu atributo id
+            Símbolo: Cerquilha (#)
+            Deve ser ÚNICO na página
+            Sintaxe: #nome-do-id { ... }
+
+        </p>
+
+        <h2>HTML correspondente</h2>
+        <pre><code>nav id="menuprincipal">... /nav </code></pre>
+        <pre><code>footer id="rodape">... /footer </code></pre>
+
+    </section>
+
+    <section class="slide" id="slide19">
+        <h1>Seletores Especiais e Combinações</h1>
+        <p>
+            Resetar margens e paddings
+            Definir box-sizing para todo o layout
+            Aplicar estilos globais
+        </p>
+
+        <h3>Agrupamento de Seletores:</h3>
+        <p>
+            Aplica o mesmo estilo a múltiplos seletores
+            Separe os seletores com vírgula
+            Evita repetição de código
+        <p>
+    </section>
+
+    <section class="slide" id="slide20">
+        <h1>Obrigado pela atenção!</h1>
+    </section>
+
+
+
+
+
+
+    <button class="nav-button prev">◀</button>
+    <button class="nav-button next">▶</button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="teste.js"></script>
+</body>
+
+</html>
