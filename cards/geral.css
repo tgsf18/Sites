@@ -1,0 +1,41 @@
+* {
+    margin: 1px;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+background-color: whitesmoke;
+}
+
+.menu{
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+    display:flex;
+    background-color: rgb(235, 235, 235);
+    border-radius: 30px;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(0, 0, 0);
+    gap: 20px;
+}
+a{
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.colecao{
+    background-color: white;
+    padding: 50px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.produro img{
+       width: 200px;
+    height: auto;
+    margin: 10px 0;
+}
+
